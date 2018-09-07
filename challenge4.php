@@ -6,21 +6,21 @@ string consisting of k consecutive strings taken in the array.
 n being the length of the string array, if n = 0 or k > n or k <= 0 return "".
 */
 
-function longest_consec($strarr,$k){
+function longest_consec($arr,$length){
    
-    $count = count($strarr);
+    /*$count = count($arr);
     $res_arr =[];
     
 
-    if($count==0 || $k>$count || $k<=0){
+    if($count==0 || $length>$count || $length<=0){
         return "";
     }
     $max = 0;
-    for($i=0;$i<($count-$k+1);$i++){
+    for($i=0;$i<($count-$length+1);$i++){
         
         $current_string='';
-        for($j=$i;$j<($k+$i);$j++){
-            $current_string .= $strarr[$j];
+        for($j=$i;$j<($length+$i);$j++){
+            $current_string .= $arr[$j];
         }
         $charcount = strlen($current_string);
         if($max<$charcount)
@@ -34,7 +34,7 @@ function longest_consec($strarr,$k){
            if($val['0'] == $max ){
                return $val[1];
            }
-    }
+    }*/
     
      
 }
